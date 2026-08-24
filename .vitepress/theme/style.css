@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "HYWenHei";
+  src: url("/HYWenHei.ttf");
+}
+
+:root {
+
+  --vp-font-family-base: 'HYWenHei', monospace, system-ui, 'Inter', -apple-system, BlinkMacSystemFont, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --vp-font-family-mono: ui-monospace, 'Cascadia Code', 'Fira Code', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+
+  --vp-c-gray-1: #5f5a4f;
+  --vp-c-gray-2: #7f7a6f;
+  --vp-c-gray-3: #afaa9f;
+  --vp-c-gray-soft: #afaa001f;
+
+  --vp-c-acovia-1: #af6f00;
+  --vp-c-acovia-2: #cf8f00;
+  --vp-c-acovia-3: #ffaf00;
+
+  --vp-c-acovia-soft: #af6f003f;
+
+  --vp-c-brand-1: var(--vp-c-acovia-1); /*文字强调色*/
+  --vp-c-brand-2: var(--vp-c-acovia-2);
+  --vp-c-brand-3: var(--vp-c-acovia-3);
+  --vp-c-brand-soft: var(--vp-c-acovia-soft);
+}
+
+.dark {
+  --vp-c-gray-1: #5f5a4f;
+  --vp-c-gray-2: #7f7a6f;
+  --vp-c-gray-3: #9f9a8f;
+  --vp-c-gray-soft: #ffaf001f;
+
+  --vp-c-acovia-1: #ffaf00;
+  --vp-c-acovia-2: #cf8f00;
+  --vp-c-acovia-3: #af6f00;
+
+  --vp-c-acovia-soft: #ffaf001f;
+
+}
+
+
+:root {
+  --vp-c-bg: #fffdfa;
+  --vp-c-bg-alt: #efedea;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-bg-soft: #efedea;
+  --vp-border-color:#3f3d3a;
+}
+
+.dark {
+  --vp-c-bg: #181715;     /*主体文档背景*/
+  --vp-c-bg-alt: #282725; /*侧边栏背景*/
+  --vp-c-bg-elv: #383735;
+  --vp-c-bg-soft: #282725; /*表格副背景*/
+  --vp-border-color: #7f7a70;
+}
+
+:root {
+  --vp-c-border: var(--vp-c-gray-1);
+  --vp-c-divider: var(--vp-c-gray-2);
+  --vp-c-gutter: var(--vp-c-gray-3);
+}
+
+:root {
+  --vp-c-text-1: #080705;
+  --vp-c-text-2: #282725;
+  --vp-c-text-3: #181715;
+}
+
+.dark {
+  --vp-c-text-1: #fffaf0;
+  --vp-c-text-2: #dfdad0;
+  --vp-c-text-3: #dfdad0;
+}
+
+:root {
+  --vp-local-nav-bg-color: var(--vp-c-bg);
+}
+
+/*===不稳定的类===*/
+
+/*存在大量!important*/
+
+h1,h2,h3,h4,h5,h6 {
+  color: var(--vp-c-text-1);
+}
+
+body p {
+  color: var(--vp-c-text-3);
+}
+
+.VPSidebarItem.level-1.is-link > .item .link > .text,
+.VPSidebarItem.level-2.is-link > .item .link > .text,
+.VPSidebarItem.level-3.is-link > .item .link > .text,
+.VPSidebarItem.level-4.is-link > .item .link > .text,
+.VPSidebarItem.level-5.is-link > .item .link > .text {
+  border-radius: 16px;
+}
+
+.VPSidebarItem.level-1.is-active > .item .link > .text,
+.VPSidebarItem.level-2.is-active > .item .link > .text,
+.VPSidebarItem.level-3.is-active > .item .link > .text,
+.VPSidebarItem.level-4.is-active > .item .link > .text,
+.VPSidebarItem.level-5.is-active > .item .link > .text {
+  border-left: 4px solid var(--vp-c-acovia-1);
+  padding-left: 12px;
+  background-color: var(--vp-c-acovia-soft);
+  border-radius: 16px;
+}
+
+div > .title:not(a) {
+  padding: 0px 0px !important;
+}
+
+@media (min-width: 960px) {
+
+  .VPSidebar {
+    padding: 64px 48px !important;
+  }
+
+  div > .title:not(a) {
+    padding: 0px 48px !important;
+  }
+
+  .group {
+    width: 100% !important;
+  }
+
+}
+
+.item {
+  user-select: none;
+}
+
+.caret-icon {
+  font-size: 24px !important;
+}

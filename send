@@ -1,0 +1,16 @@
+#!/bin/bash
+if [ -d web-src -a -e web-src ]; then
+    echo "已存在 src 目录，跳过创建..."
+else
+    mkdir web-src
+fi
+
+echo ">>> 开始备份"
+
+npx vitepress build
+
+rsync -rv ./.vitepress/dist/ acovia.net:/home/fovlin/service/web/
+
+git commit -a -m "auto commit"
+
+git push
