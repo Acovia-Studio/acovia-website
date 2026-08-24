@@ -39,9 +39,9 @@ import GridThr from '/.vitepress/vue/GridThr.vue'
 
 <PicLink url="https://hub.acovia.net/pictures/acovia-1.png"/>
 
-<PicLink url="https://hub.acovia.netpictures/acovia-2.png"/>
+<PicLink url="https://hub.acovia.net/pictures/acovia-2.png"/>
 
-<PicLink url="https://hub.acovia.netpictures/acovia-3.png"/>
+<PicLink url="https://hub.acovia.net/pictures/acovia-3.png"/>
 
 </Picture>
 
