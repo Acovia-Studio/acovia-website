@@ -22,8 +22,7 @@ export default defineConfig({
         text: "关于 Acovia",
         collapsed:false,
         items: [
-          { text: "社区介绍", link: "/acovia-server/1-1" },
-          { text: "特殊玩法", link: "/acovia-server/special-gameplay" },
+          { text: "社区介绍", link: "/acovia-server/acovia" },
           { text: "更新日志", link: "/acovia-server/new" },
         ]
       }
