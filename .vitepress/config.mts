@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress"
 export default defineConfig({
   title: "Acovia 档案馆",
   appearance:"dark",
-  description: "Fovlin 的档案存放处",
+  description: "中世纪风格原版 Minecraft 服务器",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo:"/star.svg",
