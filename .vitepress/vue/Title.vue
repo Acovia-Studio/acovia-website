@@ -51,7 +51,6 @@ img {
 
 .tagline {
     font-size: 20px;
-    color: var(--vp-c-text-1)
 }
 
 #button {
